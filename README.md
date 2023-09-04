@@ -113,7 +113,7 @@ BlocBuilder<CounterBloc, CounterState>(
         children: [
           FloatingActionButton(
             onPressed: () {
-              BlocProvider.of<CounterBloc>(context).add(IncrementCount()); // Adding the event to decrement count
+              BlocProvider.of<CounterBloc>(context).add(IncrementCount()); // Adding the event to increment count
             },
             child: const Icon(Icons.add),
           ),

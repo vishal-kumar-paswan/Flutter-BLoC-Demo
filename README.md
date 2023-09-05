@@ -1,5 +1,15 @@
 ## Flutter counter using flutter_bloc state management
 
+### How BLoC architecture works?
+
+In BLoC, for every event you <b>add</b>, It <b>emits</b> a state.
+
+<img src="https://imgur.com/bJ3TW6e.png" height="200">
+
+The limitation of BLoC is that you cannot emit a state unless an event is added. Also you can only emit one state for one event added.
+
+### Demonstration
+
 #### Step 0
 
 Create a empty Flutter project and add the `flutter_bloc` package from [pub.dev](https://pub.dev/). Next inside the `lib` folder create a folder named `blocs` which will contain all the bloc files. For example, we will create a folder `counter_bloc`. Then inside it create 3 files - `counter_event.dart`, `counter_state.dart` and `counter_bloc.dart`.
